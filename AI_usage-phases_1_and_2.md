@@ -1,0 +1,2 @@
+I used AI to help me create the bulk coding of the phase in order to get the writing part down faster and then I asked it to explain to me all the stuff that I wasn t sure of and help debug.
+I learned that typos can actually ruin projects so I made sure to have implemented strict string validation (`strchr(district, '/')`) to the `remove_district` function before calling `execlp("rm", "rm", "-rf", district, NULL)`. Without this, a malicious or accidental argument like `/` or `.` would cause the program to destroy the local file system. 
